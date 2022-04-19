@@ -364,7 +364,7 @@ Controls the logging behaviors of the function app, including Application Insigh
 
 |Property  |Default | Description |
 |---------|---------|---------|
-|fileLoggingMode|debugOnly|Defines what level of file logging is enabled.  Options are `never`, `always`, `debugOnly`. |
+|fileLoggingMode|debugOnly|Defines what level of file logging is enabled.  Options are </br>`never` - will not generate any logs, </br>`always` - will  generate logs in local environment as well as when running on Azure Portal. </br>When running in local environment the log file is generated in “C:\Users\\{user}\AppData\Local\Temp\LogFiles\Application\Functions\Function\\{Function_Name}” </br>`debugOnly` - will generate logs when the function app is running on Azure Portal. |
 |logLevel|n/a|Object that defines the log category filtering for functions in the app. This setting lets you filter logging for specific functions. For more information, see [Configure log levels](configure-monitoring.md#configure-log-levels). |
 |console|n/a| The [console](#console) logging setting. |
 |applicationInsights|n/a| The [applicationInsights](#applicationinsights) setting. |
